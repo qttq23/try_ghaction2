@@ -2,6 +2,7 @@ pipeline {
     agent any
 
     stages 
+    {
     	stage('unit Test') {
             steps {
                 echo 'unit Testing..'

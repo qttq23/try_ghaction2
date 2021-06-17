@@ -22,9 +22,10 @@ jobs:
         with:
           name: archive1mejs
           path: |
-            '**/README.md'
-            '**/index.js'
+            **/README.md
+            **/index.js
           
+      # if not exists, show warning, still success    
       - name: 5Archive code coverage results
         uses: actions/upload-artifact@v2
         with:

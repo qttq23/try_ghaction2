@@ -24,5 +24,18 @@ pipeline {
                 echo 'Deploying....'
             }
         }
+        
+        stage('finalBuild') {
+            steps {
+                echo 'building....'
+            }
+            post {
+                always {
+                    archiveArtifacts artifacts: '**/README.md'
+                }
+            }
+        }
+        
+        
     }
 }

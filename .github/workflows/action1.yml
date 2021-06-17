@@ -20,14 +20,10 @@ jobs:
       - name: 123Archive code coverage results
         uses: actions/upload-artifact@v2
         with:
-          name: archive1me
-          path: '**/README.md'
-
-      - name: 4Archive code coverage results
-        uses: actions/upload-artifact@v2
-        with:
-          name: archive1js
-          path: '**/index.js'
+          name: archive1mejs
+          path: |
+            '**/README.md'
+            '**/index.js'
           
       - name: 5Archive code coverage results
         uses: actions/upload-artifact@v2

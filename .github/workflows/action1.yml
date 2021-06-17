@@ -21,4 +21,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: archive1me
-          path: '**/README.md'
+          path: |
+            '**/README.md'
+            '**/inex.js'
+            '**/objectspy.xpi'

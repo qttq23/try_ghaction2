@@ -31,7 +31,11 @@ pipeline {
             }
             post {
                 always {
+                    archiveArtifacts '**/index.js'
+                    
                     archiveArtifacts artifacts: '**/README.md'
+                    
+                    archiveArtifacts artifacts: '**/README2.md', allowEmptyArchive: true
                 }
             }
         }

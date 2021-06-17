@@ -16,3 +16,9 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - run: cat README.md
+      
+      - name: 123Archive code coverage results
+        uses: actions/upload-artifact@v2
+        with:
+          name: archive1me
+          path: '**/README.md'
